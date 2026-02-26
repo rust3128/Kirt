@@ -1,5 +1,7 @@
-cmake_minimum_required(VERSION 3.19)
-project(Kirt LANGUAGES CXX)
+﻿cmake_minimum_required(VERSION 3.19)
+
+# Об'єднуємо назву, версію та мови в один виклик!
+project(Kirt VERSION 0.1 LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
@@ -8,6 +10,7 @@ qt_standard_project_setup()
 qt_add_executable(Kirt
     WIN32 MACOSX_BUNDLE
     main.cpp
+    res/resources.rc
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
@@ -18,6 +21,9 @@ target_link_libraries(Kirt
         Qt::Core
         Qt::Widgets
 )
+
+# Підключаємо скрипт версіонування ПІСЛЯ створення цілі (Kirt)
+include(versioning.cmake)
 
 include(GNUInstallDirs)
 

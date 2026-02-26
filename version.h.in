@@ -1,0 +1,11 @@
+#pragma once
+
+// Ці макроси будуть автоматично замінені CMake під час збірки
+#define APP_VERSION_MAJOR @VERSION_MAJOR@
+#define APP_VERSION_MINOR @VERSION_MINOR@
+#define APP_VERSION_BUILD @VERSION_BUILD@
+#define APP_VERSION_STR "@VERSION_STR@.@VERSION_BUILD@"
+
+#define APP_BUILD_DATE "@BUILD_DATE@"
+#define APP_BUILD_TIME "@BUILD_TIME@"
+#define APP_BUILD_DATETIME "@BUILD_DATETIME@"
