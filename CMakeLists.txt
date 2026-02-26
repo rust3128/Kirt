@@ -14,6 +14,7 @@ qt_add_executable(Kirt
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    Kirt/kirtform.h Kirt/kirtform.cpp Kirt/kirtform.ui
 )
 
 target_link_libraries(Kirt
