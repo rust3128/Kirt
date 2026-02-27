@@ -15,6 +15,22 @@ qt_add_executable(Kirt
     mainwindow.h
     mainwindow.ui
     Kirt/kirtform.h Kirt/kirtform.cpp Kirt/kirtform.ui
+    Kirt/ilogparser.h Kirt/ilogparser.cpp
+    Kirt/operatorlogparser.h
+    Kirt/operatorlogparser.cpp
+    Kirt/logmodel.h Kirt/logmodel.cpp
+    Kirt/optimumlogparser.h Kirt/optimumlogparser.cpp
+    Kirt/bposlogparser.h Kirt/bposlogparser.cpp
+    Kirt/ecrcommxlogparser.h Kirt/ecrcommxlogparser.cpp
+    Kirt/cardpaylogparser.h Kirt/cardpaylogparser.cpp
+    Kirt/smartcardslogparser.h Kirt/smartcardslogparser.cpp
+    Kirt/talonshttplogparser.h Kirt/talonshttplogparser.cpp
+    Kirt/logsyntaxhighlighter.h Kirt/logsyntaxhighlighter.cpp
+    Kirt/mposloyaltylogparser.h Kirt/mposloyaltylogparser.cpp
+    Kirt/loyaltylogparser.h Kirt/loyaltylogparser.cpp
+    Kirt/dlottologparser.h Kirt/dlottologparser.cpp
+    Kirt/logfilterproxymodel.h Kirt/logfilterproxymodel.cpp
+
 )
 
 target_link_libraries(Kirt
